@@ -1,0 +1,165 @@
+:root {
+    font-size:62.5%;
+}
+
+body {
+    margin:0;
+    background-color:#C0B5B3;
+    color:#2C0001;
+    font-size:clamp(12px, 1.2rem + 0.25vw, 20px);
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+
+.nav {
+    background-color:#490206;
+    color:#C0B5B3;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    border-bottom:.6rem solid #2C0001;
+    padding:1.6rem;
+}
+
+.logo {
+    font-size:3.6rem;
+}
+
+ul {
+    list-style:none;
+    display:flex;
+    justify-content: space-between;
+    width:25%;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+.add-form {
+    min-width:25%;
+    min-height:50%;
+    position:fixed;
+    background-color: #490206;
+    color:#C0B5B3;
+    left:37%;
+    top:25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    border:.6rem solid #2C0001;
+    border-radius:2rem;
+    font-size:1rem;
+    font-weight:bolder;
+    visibility:hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap:3.6rem;
+}
+
+form input{
+    display:block;
+    border-radius:.6rem;
+    border:0;
+    height:2rem;
+    background-color:#C0B5B3;
+    margin-top:.6rem;
+    border:.3rem solid #706b68;
+}
+
+
+form .submit {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .controls {
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+
+form button {
+    background-color: #2C0001;
+    color:#C0B5B3;
+    width:10rem;
+    height:2.5rem;
+    border-radius:.6rem;
+    border:.2rem solid #C0B5B3;
+}
+
+.icon {
+    width:2rem;
+}
+
+.books {
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow:visible;
+
+}
+
+.books .container {
+    flex:1;
+    width:95%;
+    margin:2rem;
+    display:grid;
+    grid-template:1fr / repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows:1fr;
+    border:.4rem solid #100e11;
+    border-radius:2rem;
+    padding:2rem;
+    gap:1.5rem;
+}
+
+.footer {
+    text-align: center;
+    padding:1rem;
+    color:#C0B5B3;
+    background-color:#2C0001;
+}
+
+.book {
+    display:grid;
+    grid-template: 3fr 3fr 3fr 1fr / 1fr;
+    text-align: center;
+    padding:2rem;
+    border:.2rem solid #100e11;
+    border-radius:.5rem;
+    background-color: #C0B5B3;
+    color:#100e11;
+    gap:.6rem;
+}
+
+.add {
+    grid-template:1fr / 1fr;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap:.6rem;
+}
+
+.info {
+    box-shadow:.2rem .2rem .1rem #100e11;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:1.5rem;
+}
+
+.book button {
+    background-color: #C0B5B3;
+}

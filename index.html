@@ -4,28 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library App</title>
+    <script src="scripts/script.js" defer></script>
+    <style>
+        @font-face {
+            font-family:"Roboto";
+            src:url(assets/fonts/Roboto-Regular.ttf);
+            font-display:swap;
+        }
+
+        body {
+            font-family:"Roboto", Arial, Helvetica, sans-serif;
+        }
+
+        body * {
+            font-family:"Roboto", Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="nav">
-        <div class="logo">We do libraries and stuff</div>
+        <div class="logo">
+            ELibrary
+        </div>
         <ul class="links">
             <li>About us</li>
             <li>Contact</li>
             <li>Donation</li>
         </ul>
     </div>
+    <div class="add-form">
+        <form action="">
+            <section class="controls">
+                <p>
+                    <label for="title">TITLE</label>
+                    <input type="text" id="title" required>
+                </p>
+                <p>
+                    <label for="author">AUTHOR</label>
+                    <input type="text" id="author" required>
+                </p>
+                <p>
+                    <label for="pages">PAGES</label>
+                    <input type="text" id="pages" required>
+                </p>
+            </section>
+            <section class="submit">
+                <button id="submit">Add</button>
+            </section>
+        </form>
+    </div>
     <div class="books">
-        <div class="contaner">
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
+        <div class="container">
+            <div class="book add">
+                <button id="add">
+                    <img src="assets/icons/plus.svg" alt="Add Icon" class="icon">
+                </button>
+            </div>
         </div>
     </div>
     <div class="footer">
